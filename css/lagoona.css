@@ -1,0 +1,35 @@
+container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  special__content {
+    min-height: 600px;
+    outline: 1px solid red;
+    
+    display: flex;
+  }
+  special__block {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 30px) / 2);
+  }
+  special__block:not(:last-child) {
+    margin-right: 30px;
+  }
+  special__item {
+    flex: 1;
+    outline: 1px solid red;
+    
+    margin-bottom: 30px;
+    background-color: grey;
+    
+    padding: 40px;
+  }
+  item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  special__item:last-child {
+    margin-bottom: 0;
+  }
